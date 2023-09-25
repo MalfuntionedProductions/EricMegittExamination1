@@ -9,11 +9,11 @@ public class Spawn : MonoBehaviour
     
     void Start()
     {
-        InvokeRepeating("Dothis", 1, .5f);
+        InvokeRepeating(nameof(InstantiateEnemySpore), 1, .5f);
     }
 
-    void Dothis()
+    void InstantiateEnemySpore()
     {
-        Instantiate(a[4], transform.position, Quaternion.identity);
+        Instantiate(s, a[Random.Range(0, a.Length - 1)].transform.position, Quaternion.identity);
     }
 }
