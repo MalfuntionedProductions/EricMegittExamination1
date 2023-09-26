@@ -13,6 +13,6 @@ public class Seek : MonoBehaviour
 
     void FixedUpdate()
 	{
-		transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, 0.005f);
+		transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, 0.0075f);
 	}
 }
